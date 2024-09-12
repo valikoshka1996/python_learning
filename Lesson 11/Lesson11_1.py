@@ -24,3 +24,14 @@ else:
 func = lambda x, y: x * y
 
 print(func(3, 2))
+
+user_count = int(input("Enter count for numbers"))
+
+i = 0
+numbers = []
+while i < user_count:
+	text = "Enter " + str(i) + " number"
+	numbers.append(input(text)) 
+	i += 1
+
+print("Minimal number:", minimal(numbers))
